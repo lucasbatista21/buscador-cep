@@ -4,9 +4,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background: linear-gradient(#121212, #212b46);
+    flex-direction: column; 
 }
+
+/* Gradiente animado  */
+
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(45deg, #000000, #00274d);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+  }
+  
+  @keyframes gradientAnimation {
+    0% {
+      background-position: 0% 0%;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0% 0%;
+    }
+  }
 
 .title {
     font-size: 85px;
@@ -122,3 +143,34 @@
         min-height: 280px;
     }
 }
+
+/* Estilo para a mensagem de erro */
+.error-message {
+    color: #ff4d4d; /* Cor vermelha para indicar erro */
+    background-color: #fdd; /* Fundo claro para destacar a mensagem */
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+    max-width: 500px;
+  }
+  
+/* Responsividade para telas muito pequenas (ex: smartphones) */
+@media (max-width: 480px) {
+    .container-input {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    input {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      font-size: 1em;
+    }
+  }
