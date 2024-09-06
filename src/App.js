@@ -4,7 +4,11 @@ import "./styles.css";
 
 function App() {
 
-      const [input, setInput] = useState("TESTE 123")
+      const [input, setInput] = useState("")
+
+      function handleSearch() {
+        alert("Teste")
+      }
 
   return <div className="container">
     <h1 className="title">Buscador de CEP</h1>
@@ -14,9 +18,10 @@ function App() {
         type="text"
         placeholder="Digite seu CEP..."
         value={input}
+        onChange={(e) => setInput(e.target.value) }
         />
 
-        <button className="btnSearch">
+        <button className="btnSearch" onClick={handleSearch}>
           <FiSearch size={25} color="#fff"/>
         </button>
       </div>
