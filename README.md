@@ -1,70 +1,98 @@
-# Getting Started with Create React App
+# Buscador de CEP
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descrição
 
-## Available Scripts
+Este é um projeto de buscador de CEP desenvolvido com React para o frontend e Node.js para o backend. O objetivo do projeto é permitir que os usuários pesquisem informações sobre um CEP específico e visualizem detalhes como o endereço completo.
 
-In the project directory, you can run:
+## Tecnologias Utilizadas
 
-### `npm start`
+- **Frontend**: React, HTML, CSS, JS
+- **Backend**: Node.js e JS
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Funcionalidades
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Pesquisa de CEP
+- Exibição de informações detalhadas do endereço
+- Interface de usuário responsiva e intuitiva
 
-### `npm test`
+## Instalação
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend (Node.js)
 
-### `npm run build`
+1. Clone o repositório:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```bash
+    git clone https://github.com/usuario/repositorio-buscador-cep.git
+    ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+2. Navegue até o diretório do backend:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    ```bash
+    cd repositorio-buscador-cep/backend
+    ```
 
-### `npm run eject`
+3. Instale as dependências:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```bash
+    npm install
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. Inicie o servidor:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    ```bash
+    npm start
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Frontend (React)
 
-## Learn More
+1. Navegue até o diretório do frontend:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    ```bash
+    cd repositorio-buscador-cep/frontend
+    ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Instale as dependências:
 
-### Code Splitting
+    ```bash
+    npm install
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+3. Inicie a aplicação:
 
-### Analyzing the Bundle Size
+    ```bash
+    npm start
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Estrutura do Projeto
 
-### Making a Progressive Web App
+- **/frontend**: Contém o código fonte do frontend desenvolvido em React.
+  - `src/`: Diretório com os componentes React e estilos CSS.
+  - `public/`: Contém o arquivo `index.html` e outros recursos públicos.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **/backend**: Contém o código fonte do backend desenvolvido em Node.js.
+  - `src/`: Diretório com os arquivos de configuração e manipulação de dados do CEP.
+  - `server.js`: Arquivo principal para iniciar o servidor Node.js.
 
-### Advanced Configuration
+## Uso
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Certifique-se de que o backend esteja em execução.
+2. Inicie o frontend e abra [http://localhost:3000](http://localhost:3000) no navegador.
+3. Insira um CEP no campo de busca e pressione Enter para visualizar as informações do endereço.
 
-### Deployment
+## Contribuição
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Sinta-se à vontade para abrir issues e enviar pull requests. Toda contribuição é bem-vinda!
 
-### `npm run build` fails to minify
+1. Fork o repositório.
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`).
+3. Commit suas alterações (`git commit -am 'Adiciona nova feature'`).
+4. Faça push para a branch (`git push origin feature/nova-feature`).
+5. Abra um Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Licença
+
+Este projeto está licenciado sob a [MIT License](LICENSE).
+
+## Contato
+
+Para dúvidas e suporte, entre em contato com [lucasbo2007@gmailcom](mailto:lucasbo2007@gmail.com).
