@@ -1,0 +1,48 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(#121212, #212b46);
+}
+
+.title {
+    font-size: 85px;
+    color: #fff;
+    animation: fadeInOut 4s infinite, slideUpDown 3s infinite;
+}
+
+/* Definição da animação de desvanecimento e surgimento */
+@keyframes fadeInOut {
+    0% {
+        color: #e0e0e0;
+        /* Cor clara para contraste com fundo escuro */
+    }
+
+    50% {
+        color: #00bcd4;
+        /* Cor azul clara para destacar, combina com o fundo */
+    }
+
+    100% {
+        color: #e0e0e0;
+    }
+}
+
+/* Definição da animação de deslizar para cima e para baixo */
+@keyframes slideUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.container-input {
+    
+}
